@@ -3,18 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/png" href="./Photos/favicon.ico"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Pacifico|Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./font.css">
+    <link rel="stylesheet" href="./font-set-1.css">
     <title>Emily Wiseman</title>
   </head>
   <body>
     <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">
-            <span class="icon-file-empty"></span>
-            Resume
-        </a>
+        <div>
+            <a class="navbar-brand" href="#">
+                <span class="icon-file-empty"></span>
+                Resume
+            </a>
+            <a class="navbar-brand" href="www.linkedin.com/in/emilydwiseman"><span class="icon-linkedin"></span></a>
+            <a class="navbar-brand" href="https://github.com/e-wiseman"><span class="icon-github"></span></a>
+        </div>
+        <div class="ml-auto">
+            <button type="button" id="embedded-btn" class="btn btn-secondary mr-1">Embedded</button>
+            <button type="button" id="devops-btn" class="btn btn-secondary mr-1">DevOps</button>
+            <button type="button" id="webdev-btn" class="btn btn-secondary mr-1">Web Development</button>
+            <!--<button type="button" class="btn btn-danger">Download <span class="icon-download"></span></button>-->
+        </div>
     </nav>
     <div class="container">
         <div class="page">
@@ -25,26 +37,153 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col contact">
-                    <span class="icon icon-phone pr-2"></span><p>(709) 769-0969</p>
+                <div class="col d-flex justify-content-between">
+                    <div class="d-flex justify-content-start">
+                        <span class="icon icon-phone pr-2 contact"></span>
+                        <p>(709) 769-0969</p>
+                    </div>
+                    <div class="d-flex justify-content-start">
+                        <span class="icon icon-email pr-2"></span>
+                        <p>ewiseman@mun.ca</p>
+                    </div>
+                    <a class="link d-flex justify-content-start" href="https://github.com/e-wiseman">
+                        <span class="icon icon-github pr-2"></span>
+                        <p>github.com/e-wiseman</p>
+                    </a>
                 </div>
-                <div class="col contact">
-                    <span class="icon icon-email pr-2"></span><p>ewiseman@mun.ca</p>
+            </div>
+            <div class="row section">
+                <h3>Summary of Qualifications</h3>
+                    <p class="prgh">I am a demonstrably, enthusiastic and quick learner eager to work in embedded software.</p> 
+                    <p class="prgh" id="webdev">
+                        I have a year of work term experience as a <span class="buzz-word">full web developer</span> and following 
+                        <span class="buzz-word">agile practices</span>. My backend development experience includes 
+                        <span class="buzz-word">Angular, Vue,</span> and <span class="buzz-word">Django</span>.
+                    </p> 
+                    <p class="prgh">
+                        I have developed in <span class="buzz-word">C, Python, JavaScript, TypeScript,</span> and <span class="buzz-word">HTML</span> 
+                        and have experience working in <span class="buzz-word">C++</span> through University. 
+                    </p>
+                    <p class="prgh" id="embedded">
+                        My work term experience also includes developing a <span class="buzz-word">VxWorks IoT</span>
+                        device simulator and sanity testing VxWorks labs. 
+                    </p>
+                    <p class="prgh" id="devops">
+                        My latest experience involved <span class="buzz-word">DevOps</span>
+                        where I used <span class="buzz-word">Jenkins</span> to automate static analysis testing. 
+                    </p>
+                    <p class="prgh">I have a strong work ethic, a professional attitude, and I can adapt to new challenges.</p>
+            </div>
+            <div class="row section">
+                <h3>Work Experience</h3>
+                <div class="job">
+                    <h4>Curtiss-Wright Defense Solutions, Kanata ON</h4>
+                    <p>Software Developer Intern</p>
+                    <p><i>September 2019 – December 2019</i></p>
+                    <ul>
+                        <li><p id="devops embedded">Utilized Jenkins, Parasoft C/C++ test, shell scripting, and python to help lead the integration Static analysis testing into Curtiss-Wright’s development workflow.</p></li>
+                        <li><p id="embedded">Preformed testing on VxWorks board support packages.</p></li>
+                        <li><p>Followed agile development practices in JIRA.</p></li>
+                        <li><p>Created excellent documentation in Confluence</p></li>
+                    </ul>
                 </div>
-                <div class="col contact">
-                    <span class="icon icon-github pr-2"></span><p>github.com/e-wiseman</p>
+                <div class="job">
+                    <h4>Wind River Systems, Kanata ON</h4>
+                    <p>Web Developer (Information Development Team)</p>
+                    <p><i>January 2019 – April 2019</i></p>
+                    <ul>
+                        <li><p id="webdev">Designed and implemented a full-stack web application following agile development practices, which pulled data from several sources</p></li>
+                        <li><p id="webdev">Created a Python website backend that queried Wind River’s Jira server and processed issue tracking data using Jira’s Python API.</p></li>
+                        <li><p>Followed agile development practices in JIRA.</p></li>
+                        <li><p id="webdev">Created RESTful endpoints using the Django backend framework</p></li>
+                        <li><p>Quickly ramped up with an Eclipse-based DITA tool to resolve a key customer-facing issue within a large documentation set for a major product release.</p></li>
+                    </ul>
+                    
+                    <p><i>January 2018 – August 2018</i></p>
+                    <ul>
+                        <li><p>Completed and presented a competitive analysis of cloud services (IBM Cloud, AWS Cloud, and Microsoft Azure) for Wind River IoT products. The competitive analysis presented product management with industry best practices for IoT cloud onboarding.</p></li>
+                        <li><p id="embedded">Prototyped a device weather simulator using VxWorks as a proof of concept for a Wind River IoT product’s new user-onboarding process.</p></li>
+                        <li><p>Created a Python application for Information Development management to transfer and parse data to a Microsoft Excel spreadsheet.</p></li>
+                        <li><p id="webdev">Designed and built a web interface using Flask and jQuery for the Jira Scraper tool used by product management to track content development times.</p></li>
+                        <li><p id="webdev">Used Angular to improve the frontend of Wind River’s Product Availability Matrix website. This improvement allowed Wind River staff to retrieve operations information for course delivery more reliably.</p></li>
+                    </ul>
                 </div>
+                <div class="job">
+                    <h4>C-CORE, St. John’s NL</h4>
+                    <p>Research Assistant</p>
+                    <p><i>May 2019 – August 2019</i></p>
+                    <ul>
+                        <li><p>Created a data base using Microsoft Access for catalogued satellite images to improve data security and allow employees to more easily catalog and reference files.</p></li>
+                        <li><p>Aided in the cataloguing of satellite images.</p></li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h4>Women in Science and Engineering Newfoundland (WISE NL), St. John’s NL</h4>
+                    <p>Education Coordinator</p>
+                    <p><i>March 2017 – June 2017 & August 2017 – October 2017</i></p>
+                    <ul>
+                        <li><p>Planned and organized WISE NL’s 2017 Remotely Operated Vehicles (ROV) webinars as part of Canada’s Science Odyssey week and Science Literacy week.</p></li>
+                        <li><p>Created detailed project reports for the 2017 ROV webinars for event sponsors.</p></li>
+                        <li><p>Recruited rural NL schools to participate in the ROV webinars.</p></li>
+                        <li><p>Oversaw and managed the operating and expenditures budget.</p></li>
+                        <li><p>Created flyers and displays advertising the ROV webinars.</p></li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h4>Occupational Health and Safety (OHS), Standards and Regulatory Review, St. John’s NL</h4>
+                    <p>Records Management Assistant/ Receptionist</p>
+                    <p><i>July 2016 – August 2016</i></p>
+                    <ul>
+                        <li><p>Assisted in the upkeep of the OHS registry</p></li>
+                        <li><p>Performed data entry and upkeep of the work place accident database</p></li>
+                        <li><p>Digitalized physical records for archival</p></li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h4>Memorial University of Newfoundland Faculty of Engineering and Applied Science, St. John’s NL</h4>
+                    <p>Research Assistant</p>
+                    <p><i>June 2015 - August 2015</i></p>
+                    <ul>
+                        <li><p>Conducted research on the Sphero robot’s applications in Swarm robotics.</p></li>
+                        <li><p>Wrote and presented a research paper describing applications of the Sphero robot in swarm robotics (See conference presentations and publications).</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row section">
+                <h3>Education</h3>
+                <p><b>Bachelor of Computer Engineering (Co-op Program), Memorial University of Newfoundland</b></p>
+                <p>Expected Grad. 2022</p>
+            </div>
+            <div class="row section">
+                <h3>Awards & Scholarships</h3>
+                <ul>
+                    <li><p>Memorial University of Newfoundland Endowment Fund Scholarship (2016)</p></li>
+                    <li><p>City of Mount Pearl Science Technology Engineering and Math Award (2015)</p></li>
+                </ul>
+            </div>
+            <div class="row section">
+                <h3>Conference Presentations & Publications</h3>
+                <p><b>Wiseman, E.</b>, Vardy, A. (2015), “Detecting Collisions on the Sphero Robot,” 24th Annual Newfoundland Electrical and Computer Engineering Conference (NECEC)</p>
             </div>
         </div>
     </div>
-    <div class="navbar fixed-bottom">
-        <p class="m-auto">Made with <span class="icon-heart"></span> by Emily</p>
-    </div>
+    <p class="footer mb-3">Made with <span class="icon-heart"></span> by Emily</p>
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script>
+    $( "#embedded-btn" ).click(function() {
+        $( "#embedded" ).toggle();
+    });
+    $( "#devops-btn" ).click(function() {
+        $( "#devops" ).toggle();
+    });
+    $( "#webdev-btn" ).click(function() {
+        $( "#webdev" ).toggle();
+    });
+    </script>
+</body>
 </html>
 
 <!--

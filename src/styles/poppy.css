@@ -1,0 +1,53 @@
+:root {
+    --poppy: #DB2029;
+    --cream: #F5F4F0;
+}
+
+#downloads {
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 500px) {
+    #downloads { 
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.btn-poppy{
+    display: flex;
+    border: 3px solid var(--poppy);
+    background-color: var(--cream);
+    color: var(--poppy);
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 100%;
+    letter-spacing: 1px;
+    padding: 0.75em;
+}
+@media only screen and (max-width: 500px) {
+    .btn-poppy { 
+        text-align: center;
+        margin-bottom: 10px;
+        justify-content: center;
+        width: 75%;
+    }
+}
+
+a.btn-poppy:hover {
+    color: var(--cream);
+    background-color: var(--poppy);
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 500px) {
+    .remove-md-bl { border-left: none; }
+    .remove-md-br { border-right: none; }
+}
+
+.poppy {
+    background-color: var(--poppy);
+    color: var(--cream);
+}

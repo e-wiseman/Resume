@@ -3,40 +3,65 @@
     --secondary-colour: #DB2029;
     --tertiary-colour: #888888;
     --bg-colour: #F5F4F0;
+
+    --title-text: 'Playfair Display', serif;
+    --secondary-text: 'Montserrat', sans-serif;;
+    --body-text: 'Roboto', sans-serif;;
 }
+
 
 html, body { width: 100vw; }
 
 body {
     background-color: var(--bg-colour);
-    font-family: 'Roboto', sans-serif;
     color: var(--main-colour);
+    font-family: var(--body-text);
 }
 
+/* ========== COLOURS ========== */
+.dark-text { color: var(--main-colour); }
+.main-text { color: var(--secondary-colour); }
+.secondary-text { color: var(--tertiary-colour); }
+.light-text { color: var(--bg-colour); }
+
+.dark-bg { background-color: var(--main-colour); }
+.main-bg { background-color: var(--secondary-colour); }
+.secondary-bg { background-color: var(--tertiary-colour); }
+.light-bg { background-color: var(--bg-colour); }
+/* ============================= */
+
+
+/* ========== TEXT ========== */
 h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--title-text);
+    color: var(--main-colour);
     font-size: 2.5em;
     font-weight: 900;
-    color: var(--main-colour);
     line-height: 100%;
 } 
 
 h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    font-family: var(--secondary-text);
     color: var(--main-colour);
+    font-weight: 600;
+    line-height: 100%;
 }
 
 h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--secondary-text);
+    color: var(--main-colour);
     font-weight: 600;
-    color: var(--secondary-colour);
+    font-size: 1.5rem;
+
 }
 
-p {
-    margin-bottom: 0px;
-}
+p { margin-bottom: 0px; }
+/* ========================== */
 
+
+
+
+/* ========== NAVBAR ========== */
 .navbar-brand {
     font-family: 'Playfair Display', serif;
     font-weight: 900;
@@ -58,15 +83,76 @@ a.nav-link:hover {
     font-weight: 500;
     color: var(--secondary-colour);
 }
+/* ============================ */
 
-.navbar-toggler-icon { color: var(--main-colour);}
 
-#emily { height: 350px; }
 
-.footer {
-    text-align: center;
+/* ========== BUTTONS ========== */
+a { text-decoration: none; }
+
+.btn {
+    display: flex;
+    background-color: transparent;
+    border-radius: 0px;
+    border-width: 3px; 
+    border-style: solid;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 100%;
+    letter-spacing: 1px;
+    padding: 0.75em;
+}
+@media only screen and (max-width: 500px) {
+    .btn { 
+        text-align: center;
+        margin-bottom: 10px;
+        justify-content: center;
+        width: 75%;
+    }
 }
 
+.btn.light-btn {
+    border-color: (var(--bg-colour));
+    color: var(--bg-colour);
+}
+a.btn.light-btn:hover {
+    color: var(--main-colour);
+    background-color: var(--bg-colour);
+    text-decoration: none;
+}
+
+.btn.dark-btn {
+    border-color: (var(--main-colour));
+    color: var(--main-colour);
+}
+a.btn.dark-btn:hover {
+    color: var(--bg-colour);
+    background-color: var(--main-colour);
+    text-decoration: none;
+}
+
+.btn.main-btn {
+    border-color: (var(--secondary-colour));
+    color: var(--secondary-colour);
+}
+a.btn.main-btn:hover {
+    color: var(--bg-colour);
+    border-color: var(--secondary-colour);
+    background-color: var(--secondary-colour);
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 500px) {
+    .remove-md-bl { border-left: none; }
+    .remove-md-br { border-right: none; }
+}
+/* ============================= */
+
+
+
+/* ========== INTRO PAGE ========== */
+#id-photo { height: 350px; }
 
 #intro { font-size: 1.5em; }
 @media only screen and (max-width: 500px) {
@@ -75,7 +161,42 @@ a.nav-link:hover {
     }
 }
 
+#downloads {
+    display: flex;
+    flex-direction: row;
+}
+@media only screen and (max-width: 500px) {
+    #downloads { 
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* ================================ */
 
 
 
+/* ========== SKILLS PAGE ========== */
+li {
+    display: flex;
+    align-items: center;
+}
 
+.tag {
+    font-family: var(--body-text);
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 0.5em;
+    padding: 0.5em 0.75em;
+    margin-left: 7px;
+    margin-bottom: 7px;
+    text-transform: uppercase;
+    line-height: 100%;
+    border-radius: 3px;
+}
+
+.fa-arrow-right { margin-right: 10px }
+/* ================================= */
+
+
+
+.footer { text-align: center; }

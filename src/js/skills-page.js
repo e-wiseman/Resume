@@ -1,6 +1,6 @@
 class SkillsPage extends React.Component {
     makeTags ( element ){
-        const skills = element.map((skillName) => 
+        const skills = element.map((skillName, key) => 
             <span className="tag light-bg main-text">{ skillName }</span>
         );
         return (
@@ -9,8 +9,8 @@ class SkillsPage extends React.Component {
     }
 
     displayItem ( category ){
-        const item = category.map((skillsCategory) =>
-            <li className="d-flex-inline flex-wrap">
+        const item = category.map((skillsCategory, key) =>
+            <li className="">
                 <i className="light-text fas fa-arrow-right"></i>
                 <p className="light-text">{ skillsCategory.name }</p>
                 { this.makeTags( skillsCategory.skills ) }
@@ -24,27 +24,27 @@ class SkillsPage extends React.Component {
 
     render() {
         return (
-            <div className="main-bg">
-                <div className="container pt-5 pb-5">
-                    <h2 className="light-text">Skills <i className="fas fa-check"></i></h2>
-                    <div className="d-md-flex justify-content-around">
-
-                        <div className="p-3 text-center text-md-left">
-                            <h3 className="light-text">Languages</h3>
-                            { this.displayItem( this.props.data.languages ) }
-
-                            <h3 className="light-text">Soft Skills</h3>
-                            { this.displayItem( this.props.data.softSkills ) }
-                        </div>
-
-                        <div className="p-3 text-center text-md-left">
-                            <h3 className="light-text">Web Development</h3>
-                            { this.displayItem( this.props.data.webDev ) }
-                        </div>
-
+            <div className="page">
+                <div>
+                <h2 className="light-text mb">Skills <i className="fas fa-check"></i></h2>
+                <div className="boxes">
+                    <div className="box mb">
+                        <h3>Languages</h3>
+                        { this.displayItem( this.props.data.languages ) }
                     </div>
-            </div>        
-        </div>
+
+                    <div className="box mb">
+                        <h3 className="light-text">Soft Skills</h3>
+                        { this.displayItem( this.props.data.softSkills ) }
+                    </div>
+
+                    <div className="box mb">
+                        <h3 className="light-text">Web Development</h3>
+                        { this.displayItem( this.props.data.webDev ) }
+                    </div>
+                </div>  
+                </div>
+            </div>
         )
     }
 }

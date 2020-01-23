@@ -30,7 +30,6 @@ class WorkPage extends React.Component {
         const dates = job.dates.map((date) =>
             <p className="info dark-text">{ date }</p>
         ); 
-
         return ( 
             <div className="info-group">
                 <i className="info main-text far fa-calendar-alt"></i>
@@ -98,9 +97,18 @@ let JOBS = [
         jobTitle: "Web Development Intern",
         dates: ["January 2018 - August 2018", "January 2019 - April 2019"],
         location: "Ottawa, Ontario",
-        logo: "/src/assets/wr-logo.png",
+        logo: "/src/assets/Jobs/Wind River/logo.png",
         assests: [""],
-        blog: "/src/assets/windriver.txt"
+        blog: "/src/assets/Jobs/Wind River/blog.txt"
+    },
+    {
+        companyName: "Curtiss-Wright Defense Solutions",
+        jobTitle: "Software Development Intern",
+        dates: ["September 2019 - December 2019"],
+        location: "Ottawa, Ontario",
+        logo: "/src/assets/Jobs/Curtiss-Wright/logo.png",
+        assests: [""],
+        blog: "/src/assets/Jobs/Curtiss-Wright/blog.txt"
     }
 ]
 

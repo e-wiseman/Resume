@@ -1,0 +1,106 @@
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.flex-group {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.middle {
+    align-items: center;
+}
+
+.page {
+    display: flex;
+    width: auto;
+    overflow-x: hidden;
+    justify-content: center;
+}
+.row { flex-direction: row !important; }
+.col { flex-direction: column !important; }
+
+.boxes { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+/* Mobile */
+@media only screen and (max-width: 500px) {
+    .hide-mobile { display: none; }
+
+    .page { padding: 20px; }
+    .row-sm { flex-direction: row; }
+    .col-sm { flex-direction: column; }
+    
+    .p { padding: 20px; }
+    .pl { padding-left: 20px; }
+    .pr { padding-right: 20px; }
+    .pt { padding-top: 20px; }
+    .pb { padding-bottom: 20px; }
+
+    .m { margin: 20px; }
+    .ml { margin-left: 20px; }
+    .mr { margin-right: 20px; }
+    .mt { margin-top: 20px; }
+    .mb { margin-bottom: 20px; }
+
+    .m-sm { margin: 20px; }
+    .ml-sm { margin-left: 20px; }
+    .mr-sm { margin-right: 20px; }
+    .mt-sm { margin-top: 20px; }
+    .mb-sm { margin-bottom: 20px; }
+
+    .box-sm-full { width: 100%; }
+    .box-sm-2 { width: 50%; }
+    .box-sm-4 { width: 25%; }
+}
+
+/* Laptops */
+@media only screen and (min-width: 501px) {
+    .hide-laptop { display: none !important; }
+
+    .page {
+        flex-direction: row;
+        padding: 50px;
+    }
+    .row-lg { flex-direction: row; }
+    .col-lg { flex-direction: column; }
+
+    .p { padding: 50px; }
+    .pl { padding-left: 50px; }
+    .pr { padding-right: 50px; }
+    .pt { padding-top: 50px; }
+    .pb { padding-bottom: 50px; }
+
+    .m { margin: 50px; }
+    .ml { margin-left: 50px; }
+    .mr { margin-right: 50px; }
+    .mt { margin-top: 50px; }
+    .mb { margin-bottom: 50px; }
+
+    .m-lg { margin: 50px; }
+    .ml-lg { margin-left: 50px; }
+    .mr-lg { margin-right: 50px; }
+    .mt-lg { margin-top: 50px; }
+    .mb-lg { margin-bottom: 50px; }
+
+    .m-tiny-lg { margin: 25px; }
+    .ml-tiny-lg { margin-left: 25px; }
+    .mr-tiny-lg { margin-right: 25px; }
+    .mt-tiny-lg { margin-top: 25px; }
+    .mb-tiny-lg { margin-bottom: 25px; }
+
+    .box-lg-full { width: 100% !important; }
+    .box-lg-2 { width: 50% !important; }
+    .box-lg-4 { width: 25% !important; }
+}

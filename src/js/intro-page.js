@@ -6,12 +6,12 @@ class IntroPage extends React.Component {
 
     render() {
         return (
-            <div className="page">
-                    <img className="hide-mobile" id="id-photo" src="/src/assets/emily.svg"/>
+            <div className="page row-lg">
+                    <img className="hide-mobile mr" id="id-photo" src="/src/assets/emily.svg"/>
                     <div>
                         <h1>Hi, I'm Emily!</h1>
-                        <p className="mt mb">{ this.tagline } and <span className="text-emphasis">{ this.subline }</span></p>
-                        <img className="hide-laptop" id="id-photo" src="/src/assets/emily.svg"/>
+                        <p>{ this.tagline } and <span className="text-emphasis">{ this.subline }</span></p>
+                        <img className="hide-laptop mt mb" alt="Emily Wiseman Avatar" id="id-photo" src="/src/assets/emily.svg"/>
                         <div className="button-group">
                             <a className="button main left" href="#">
                                 <i className="far fa-envelope"></i>

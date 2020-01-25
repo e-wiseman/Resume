@@ -1,0 +1,48 @@
+:root {
+    --title-text: 'Playfair Display', serif;
+    --secondary-text: 'Montserrat', sans-serif;;
+    --body-text: 'Roboto', sans-serif;;
+}
+
+
+h1, h2, h3, p{
+    display: block;
+    line-height: 100%;
+    margin: 0px;
+}
+
+h1 { font-family: var(--secondary-text); }
+
+h2 { font-family: var(--secondary-text); }
+
+h3 {
+    font-family: var(--secondary-text); 
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+
+p {
+    font-family: var(--body-text);
+    font-size: 24px;
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 500px) {
+    h1 { font-size: 3.25rem; }
+
+    h2 { font-size: 2.25rem; }
+
+    p {
+        text-align: left;
+        font-size: 1.5rem;
+    }
+}
+
+/* Laptops */
+@media only screen and (min-width: 501px) {
+    h1 { font-size: 3.5rem; }
+
+    h2 { font-size: 2.5rem; }
+}

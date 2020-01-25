@@ -10,7 +10,7 @@ class WorkPage extends React.Component {
         let startPos = 0;
         for(let i = 0; i < text.length-1; i++){
             if( text[i] == '\n' ){
-                paragraphs.push( <p className="blog-post dark-text">{ text.substr(startPos, i) }</p> );
+                paragraphs.push( <p className="paragraph dark-text">{ text.substr(startPos, i) }</p> );
                 startPos = ( i + 1 );
             }
         }
@@ -19,7 +19,7 @@ class WorkPage extends React.Component {
 
     showLocation( job ){
         return (
-            <div className="info-group">
+            <div className="flex-group">
                 <i className="info main-text fas fa-map-marker-alt"></i>
                 <p className="info dark-text">{ job.location }</p>
             </div>
@@ -31,7 +31,7 @@ class WorkPage extends React.Component {
             <p className="info dark-text">{ date }</p>
         ); 
         return ( 
-            <div className="info-group">
+            <div className="flex-group">
                 <i className="info main-text far fa-calendar-alt"></i>
                 <div>{ dates }</div>
             </div>
@@ -40,28 +40,27 @@ class WorkPage extends React.Component {
 
     showBlog ( job ){
         let blog = this.parseTxtFile( job.blog );
-        console.log(blog);
         return (
             <div className="">
-                <div>{ blog }</div>
-                <a id={ job.companyName } className="button mt" href="#">Read More</a>
+                <div className="blog-post-hide">{ blog }</div>
+                <a id={ job.companyName } className="button" href="#">Read More</a>
             </div>
         )
     }
 
     showJob ( job ){
         return(
-            <div className="mt page">
-                <div className="hide-mobile pr">
-                    <img className="mb" src={ job.logo } />
+            <div className="boxes mb">
+                <div className="box-lg-4 mr hide-mobile">
+                    <img className="fill" src={ job.logo } />
                     <div>{ this.showLocation( job ) }</div>
                     <div>{ this.showDate( job ) }</div>
                 </div>
-                <div className="">
+                <div className="box-lg-2 box-sm-full">
                     <h3 className="main-text">{ job.companyName }</h3>
-                    <h2 className="dark-text mb">{ job.jobTitle }</h2>
-                    <img className="hide-laptop" src={ job.logo } />
-                    <div className="hide-laptop pt pb">
+                    <h2 className="dark-text pb">{ job.jobTitle }</h2>
+                    <img className="fill hide-laptop" src={ job.logo } />
+                    <div className="hide-laptop pb">
                         { this.showLocation(job) }
                         { this.showDate(job) }
                     </div>
@@ -85,7 +84,7 @@ class WorkPage extends React.Component {
         return (
             <div className="light-bg">
                 <h2 className="dark-text pt pl">Work Experience <i className="fas fa-briefcase"></i></h2>
-                { this.displayJobs( this.props.jobs ) }        
+                <div className="page">{ this.displayJobs( this.props.jobs ) }</div>      
             </div>
         )
     }

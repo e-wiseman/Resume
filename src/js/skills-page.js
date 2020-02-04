@@ -24,25 +24,25 @@ class SkillsPage extends React.Component {
 
     render() {
         return (
-            <div className="page">
-                <div>
+            <div className="page col">
                 <h2 className="light-text mb">Skills <i className="fas fa-check"></i></h2>
                 <div className="boxes">
-                    <div className="box mb">
+                    <div className="box-sm-full box-lg-2 mb">
                         <h3>Languages</h3>
                         { this.displayItem( this.props.data.languages ) }
                     </div>
 
-                    <div className="box mb">
+                    <div className="box-sm-full box-lg-2 mb">
                         <h3 className="light-text">Soft Skills</h3>
                         { this.displayItem( this.props.data.softSkills ) }
                     </div>
 
-                    <div className="box mb">
+                    <div className="box-sm-full box-lg-2 mb">
                         <h3 className="light-text">Web Development</h3>
                         { this.displayItem( this.props.data.webDev ) }
                     </div>
-                </div>  
+
+                    <div className="box-sm-full box-lg-2 mb"></div>
                 </div>
             </div>
         )

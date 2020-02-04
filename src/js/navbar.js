@@ -15,13 +15,13 @@ class NavBar extends React.Component {
         return (
             <div>
                 <nav>
-                    <p className="brand">Emily Wiseman</p>
-                    <div className="hide-mobile group">
+                    <p id="brand">Emily Wiseman</p>
+                    <div className="hide-mobile flex-group row">
                         <a className="nav-link nav-text"><p>Skills</p></a>
                         <a className="nav-link nav-text"><p>Work Experieance</p></a>
                         <a className="nav-link nav-text"><p>Projects</p></a>
                     </div>
-                    <div id="socialMedia" className="group">
+                    <div id="socialMedia" className="flex-group row">
                         <a className="nav-link" href="http://www.linkedin.com/in/emilydwiseman/">
                             <i className="nav-icon fab fa-linkedin"></i>
                         </a>
@@ -31,7 +31,7 @@ class NavBar extends React.Component {
                     </div>
                     <a id="menu" onClick={this.dropDownEvent}><i className="nav-icon hide-laptop fas fa-bars"></i></a>
                 </nav>
-                <div id="nav-dropdown" className="group nav-link">
+                <div id="nav-dropdown" className="flex-group col nav-link hide-laptop">
                     <a className="nav-text"><p>Skills</p></a>
                     <a className="nav-text"><p>Work Experieance</p></a>
                     <a className="nav-text"><p>Projects</p></a>

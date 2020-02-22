@@ -14,30 +14,50 @@ class NavBar extends React.Component {
     render() {
         return (
             <div>
-                <nav>
-                    <p id="brand">Emily Wiseman</p>
-                    <div className="hide-mobile flex-group row">
-                        <a className="nav-link nav-text"><p>Skills</p></a>
-                        <a className="nav-link nav-text"><p>Work Experieance</p></a>
-                        <a className="nav-link nav-text"><p>Projects</p></a>
-                    </div>
-                    <div id="socialMedia" className="flex-group row">
-                        <a className="nav-link" href="http://www.linkedin.com/in/emilydwiseman/">
-                            <i className="nav-icon fab fa-linkedin"></i>
-                        </a>
-                        <a className="nav-link" href="http://www.linkedin.com/in/emilydwiseman/">
-                            <i className="nav-icon fab fa-github"></i>
-                        </a>
-                    </div>
-                    <a id="menu" onClick={this.dropDownEvent}><i className="nav-icon hide-laptop fas fa-bars"></i></a>
-                </nav>
-                <div id="nav-dropdown" className="flex-group col nav-link hide-laptop">
-                    <a className="nav-text"><p>Skills</p></a>
-                    <a className="nav-text"><p>Work Experieance</p></a>
-                    <a className="nav-text"><p>Projects</p></a>
+                <div className="hide-sm show-xl">
+                    <header className="navbar">
+                        <section className="navbar-section">
+                            <a href="#" className="navbar-brand mr-2">Emily Wiseman</a>
+                        </section>
+                        <section className="navbar-center">
+                            <div className="side-by-side">
+                                <a href="#skills" className="navbar-link">Skills</a>
+                                <a href="#workexperiance" className="navbar-link">Work Experiance</a>
+                                <a href="#projects" className="navbar-link">Projects</a>
+                            </div>
+                        </section>
+                        <section className="navbar-section">
+                            <a href="http://www.linkedin.com/in/emilydwiseman/" className="btn btn-link">
+                                <i className="nav-icon fab fa-linkedin"></i>
+                            </a>
+                            <a href="..." className="btn btn-link">
+                                <i className="nav-icon fab fa-github"></i>
+                            </a>
+                        </section>
+                    </header>
                 </div>
-      
+
+                <div className="show-xs hide-md">
+                    <header className="navbar">
+                        <section className="navbar-section">
+                            <a href="http://www.linkedin.com/in/emilydwiseman/" className="btn btn-link">
+                                <i className="nav-icon fab fa-linkedin"></i>
+                            </a>
+                            <a href="..." className="btn btn-link">
+                                <i className="nav-icon fab fa-github"></i>
+                            </a>
+                        </section>
+                        <section className="navbar-center">
+                            <a href="#" className="navbar-brand">Emily Wiseman</a>
+                        </section>
+                        <section className="navbar-section">
+                            <a id="menu" onClick={this.dropDownEvent}><i className="nav-icon fas fa-bars"></i></a>
+                        </section>
+                    </header>
+                </div>
+                
             </div>
+            
         )
     }
 }

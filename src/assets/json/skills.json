@@ -1,0 +1,20 @@
+[
+    {
+        "name": "CSS",
+        "icon": "fab fa-css3-alt",
+        "level": "intermediate",
+        "description": ""
+    },
+    {
+        "name": "JavaScript",
+        "icon": "fab fa-js-square",
+        "level": "beginner",
+        "description": ""
+    },
+    {
+        "name": "Python",
+        "icon": "fab fa-python",
+        "level": "intermediate",
+        "description": ""
+    }
+]

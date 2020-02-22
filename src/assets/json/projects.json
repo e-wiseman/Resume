@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Bulb",
+        "class": "bulb",
+        "photo": "/src/assets/projects/Bulb.svg",
+        "tagline": "A companion app for D2L brightspace",
+        "description": "A dashboard website and android app that allows students to quickly view statistics on their grades and . Made with the wonderful Christian James for our Junior design project.",
+        "technology": ["Python", "Django", "Java", "Android Studio", "Bootstrap"],
+        "link": "https://github.com/not-so-wiseman/Bulb"
+    },
+    {
+        "name": "Reciply",
+        "class": "reciply",
+        "photo": "/src/assets/projects/Reciply.svg",
+        "tagline": "Your mobile recipe book",
+        "description": "A hybrid app that allows ",
+        "technology": ["Python", "Django", "React Native"],
+        "link": "https://github.com/not-so-wiseman/Reciply"
+    },
+    {
+        "name": "This Website!",
+        "class": "playfair",
+        "photo": "/src/assets/projects/Resume.svg",
+        "tagline": "My Personal Portfolio",
+        "description": "A responsive portfolio website.",
+        "technology": ["React JS", "HTML", "CSS", "Spectre.css", "Font Awesome"],
+        "link": "https://github.com/not-so-wiseman/Resume"
+    }
+]

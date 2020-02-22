@@ -1,0 +1,29 @@
+[
+    {
+        "date": "September 2019 - December 2019",
+        "companyName": "Curtiss-Wright Defense Solutions",
+        "jobTitle": "Software Development Intern",
+        "location": "Ottawa, Ontario",
+        "logo": "/src/assets/cw_logo.png",
+        "page": "/src/pages/curtisswright.html",
+        "description": "Just a little indication. Mountains are so simple, they're hard. Volunteering your time; it pays you and your whole community fantastic dividends. This is an example of what you can do with just a few things, a little imagination and a happy dream in your heart. It's hard to see things when you're too close. Take a step back and look. Let's build some happy little clouds up here."
+    },
+    {
+        "date": "January 2019 - April 2019",
+        "companyName": "Wind River Systems",
+        "jobTitle": "Web Development Intern",
+        "location": "Ottawa, Ontario",
+        "logo": "/src/assets/wr_logo.png",
+        "page": "/src/pages/windriver.html",
+        "description": "We need dark in order to show light. When things happen - enjoy them. They're little gifts. We're trying to teach you a technique here and how to use it. If you didn't have baby clouds, you wouldn't have big clouds. Imagination is the key to painting. Let's have a little bit of fun today."
+    },
+    {
+        "date": "January 2018 - August 2018",
+        "companyName": "Wind River Systems",
+        "jobTitle": "Web Development Intern",
+        "location": "Ottawa, Ontario",
+        "logo": "/src/assets/wr_logo.png",
+        "page": "/src/pages/windriver.html",
+        "description": "Let's do that again. Talent is a pursued interest. That is to say, anything you practice you can do. Put it in, leave it alone. Every single thing in the world has its own personality - and it is up to you to make friends with the little rascals. Just make little strokes like that. This present moment is perfect simply due to the fact you're experiencing it."
+    }
+]

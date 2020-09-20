@@ -1,0 +1,25 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<div bp="grid">
+    <div bp="3" id="profile">
+        <img src="{{ url_for('static', filename='profile.png') }}" alt="Emily Wiseman's profile picture. She is smiling with her head through a wooden cutout of a sunflower.">
+    </div>
+    <section bp="9" id="about">
+        <h1 class="typewriter">Hi! I'm Emily</h1>
+        <article><p>I am a computer Engineering student from Newfoundland, Canada. 
+        I have 20 months of internship experience and I am looking for my next adventure! My expected graduation is April 2022.
+        </p></article>
+        <div class="tabs">
+            <span class="lozenge">Python</span>
+            <span class="lozenge">JavaScript</span>
+            <span class="lozenge">Django</span>
+            <span class="lozenge">Vue.js</span>
+            <span class="lozenge">Lua</span>
+            <span class="lozenge">C++</span>
+            <span class="lozenge">Java</span>
+            <span class="lozenge">JavaScript</span>
+        </div>
+    </section>
+</div>
+{% endblock %}

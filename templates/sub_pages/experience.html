@@ -1,0 +1,78 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<h1 style="text-align: center;">Work Experience</h1>
+
+<section class="work-experience-box">
+    <div class="flex-container">
+        <div class="lozenge">Winter 2018</div>
+        <div class="lozenge">Spring 2018</div>
+        <div class="lozenge">Winter 2019</div>
+        <div class="lozenge">Spring 2020</div>
+        <div class="lozenge">Fall 2020</div>
+    </div>
+    <div class="company-logo">
+        <img src="{{ url_for('static', filename='WindRiver.png') }}" alt="Wind River logo"  width="250px">
+    </div>
+    <h3>Wind River</h3>
+    <h2>Web Development Intern</h2>
+    <div class="job-description">
+        <p>
+            Designed and implemented a full-stack web application, following agile development practices, which pulled data from multiple sources and displayed it on a dynamic dashboard. 
+            This allowed management at Wind River to quickly view, filter, and save project statistics.
+        </p>
+        <p>Quickly ramped up with an Eclipse-based DITA tool to resolve a key customer-facing issue within a large documentation set for a major product release.</p>
+        <p>
+            Assisted the Wind River Helix Device Cloud team in improving user onboarding practices and developed management tools for Wind River’s Technical Publications group.
+            <ul>
+                <li>
+                    <p>
+                        Completed and presented a competitive analysis of cloud services for Wind River IoT products.
+                        The competitive analysis presented product management with industry best practices for IoT cloud onboarding.
+                    </p>
+                </li>
+                <li>
+                    <p>Prototyped a device weather simulator using VxWorksas a proof of concept for a Wind River IoT product’s new user onboarding process</p>
+                </li>
+                <li>
+                    <p>Created a Pythonapplication for to transfer and parse data to a Microsoft Excel spreadsheet</p>
+                </li>
+                <li>
+                    <p>Improved the frontend of an internal websiteusing Angular (a JavaScriptfrontend framework). This improvement allowed Wind River staff to retrieve operations information for course delivery more reliably.</p>
+                </li>
+            </ul> 
+        </p>
+    </div>
+</section>
+
+<section class="work-experience-box">
+    <div class="flex-container">
+        <div class="lozenge">Fall 2019</div>
+    </div>
+    <div class="company-logo">
+        <img src="{{ url_for('static', filename='CurtissWright.png') }}" alt="Curtiss-Wright logo"  width="250px">
+    </div>
+    <h3>Curtiss-Wright</h3>
+    <h2>Software Development Intern</h2>
+    <div class="job-description">
+        <p>
+            Spearheaded Static Analysis Testingintegration into the Curtiss-Wright Linux BSP development lifecycle using DevOps best practices.
+        </p>
+        <ul>
+            <li>
+                <p>Designed a REST API, using Python, to broker requests between JenkinsPipelines, Bitbucket, and Linux Virtual Machines. This API solved a significant design challenge involving the incompatibility of existing software.</p>
+            </li>
+            <li>
+                <p>
+                    Created command-line scripts(Shell and Bash) to simplify the day to day use of Static Analysis Software used by Curtiss-Wright. This enabled developers to use the tool with little to no ramp-up time.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Performed manual testing on Curtiss-Wright ruggedized boards, running Wind River VxWorks, thoroughly and on time to ensure a Curtiss-Wright BSP product met its release date.
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+{% endblock %}
